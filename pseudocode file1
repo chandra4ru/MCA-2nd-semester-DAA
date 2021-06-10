@@ -1,0 +1,82 @@
+Q.what would be the out put of the following pseudocode
+
+7.pseudocode:
+Integer a,b,c,d
+ set b=18,c=12
+ a=b-c
+for(each c from 1 to a-1)
+b=b+c+12
+b=b/5
+d=b+a
+end for
+c=a+b+c
+print a,b,c
+
+output: 6 4 16
+
+program:
+
+class pseu1
+{
+public static void main(String args[])
+{
+int a,b=18,c=12,d;
+a=b-c;
+
+for(c=1;c<=a-1;c++)
+{
+b=b+c+12;
+System.out.println("At step "+c);
+System.out.println("b is "+b);
+b=b/5;
+System.out.println("after div b is"+b);
+d=b+a;
+System.out.println("d is "+d);
+}
+c=a+b+c;
+System.out.println("a="+a);
+System.out.println("b="+b);
+System.out.println("c="+c);
+}
+}
+
+8.Integer func(Integer a ,Integer b)
+Integer temp
+while(b)
+temp=a mod b
+a=b
+b=temp
+end while
+return a
+End function func()
+
+output: 2
+
+program:
+
+class WHILE
+{
+int func(int a, int b)
+{
+int temp,i=0;
+while(b!=0)
+{
+i=i+1;
+temp=a%b;
+a=b;
+b=temp;
+System.out.println("at step" +i);
+System.out.println("temp="+temp);
+System.out.println("a="+a);
+System.out.println("b="+b);
+}
+return a;
+}
+public static void main(String args[])
+{
+WHILE w1=new WHILE();
+int res=w1.func(10,6);
+System.out.println(res);
+}
+}
+
